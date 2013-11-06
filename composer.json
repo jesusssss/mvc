@@ -1,0 +1,6 @@
+{
+    "require": {
+        "shuber/curl": "dev-master",
+        "doctrine/orm": "v2.4.0"
+    }
+}
