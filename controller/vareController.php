@@ -32,11 +32,13 @@ class vareController {
 	
 	public function edit_event(){
 		echo "correction saved";
-		$product = $this->em->find('productModel',$this->request["productid"]);
+		$product = $this->em->find('models\productModel',$this->request["productid"]);
 		$product->setName($this->request["productname"]);
 		$this->em->persist($product);
 		$this->em->flush();
-		Header('Location:index.php?controller=product&view=HTML&productid='.$product->getId());
+
+		Header('Location:index.php?controller=vare&view=HTML&productid='.$product->getId());
+        exit;
 	}
 	
 	public function getProduct() {
