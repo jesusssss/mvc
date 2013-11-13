@@ -1,9 +1,10 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', true);
+
 spl_autoload_register('mvcAutoload', true, true);
 require_once("vendor/autoload.php");
 
-error_reporting(E_ALL);
-ini_set('display_errors', true);
 
 function mvcAutoload($className)
 {
@@ -26,7 +27,7 @@ use Doctrine\ORM\EntityManager;
 
 // Create a simple "default" Doctrine ORM configuration for Annotations
 $isDevMode = true;
-$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src"), $isDevMode);
+$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/models"), $isDevMode);
 
 // database configuration parameters
 $conn = array(

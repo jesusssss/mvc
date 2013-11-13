@@ -131,7 +131,8 @@
             {
                 "name": "Jonathan Wage",
                 "email": "jonwage@gmail.com",
-                "homepage": "http://www.jwage.com/"
+                "homepage": "http://www.jwage.com/",
+                "role": "Creator"
             },
             {
                 "name": "Guilherme Blanco",
@@ -198,9 +199,10 @@
         ],
         "authors": [
             {
-                "name": "Jonathan Wage",
+                "name": "Jonathan H. Wage",
                 "email": "jonwage@gmail.com",
-                "homepage": "http://www.jwage.com/"
+                "homepage": "http://www.jwage.com/",
+                "role": "Creator"
             },
             {
                 "name": "Guilherme Blanco",
@@ -276,7 +278,8 @@
             {
                 "name": "Jonathan Wage",
                 "email": "jonwage@gmail.com",
-                "homepage": "http://www.jwage.com/"
+                "homepage": "http://www.jwage.com/",
+                "role": "Creator"
             },
             {
                 "name": "Guilherme Blanco",
@@ -337,9 +340,10 @@
         ],
         "authors": [
             {
-                "name": "Jonathan Wage",
+                "name": "Jonathan H. Wage",
                 "email": "jonwage@gmail.com",
-                "homepage": "http://www.jwage.com/"
+                "homepage": "http://www.jwage.com/",
+                "role": "Creator"
             },
             {
                 "name": "Guilherme Blanco",
@@ -414,7 +418,8 @@
             {
                 "name": "Jonathan Wage",
                 "email": "jonwage@gmail.com",
-                "homepage": "http://www.jwage.com/"
+                "homepage": "http://www.jwage.com/",
+                "role": "Creator"
             },
             {
                 "name": "Guilherme Blanco",
@@ -503,17 +508,17 @@
     },
     {
         "name": "doctrine/dbal",
-        "version": "v2.4.0",
-        "version_normalized": "2.4.0.0",
+        "version": "v2.4.1",
+        "version_normalized": "2.4.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/dbal.git",
-            "reference": "3eb557f144ec41e6e84997e43acb1946c92fbc88"
+            "reference": "328357bd9eea9d671fe5fff0737f01953bfe66a0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/dbal/zipball/3eb557f144ec41e6e84997e43acb1946c92fbc88",
-            "reference": "3eb557f144ec41e6e84997e43acb1946c92fbc88",
+            "url": "https://api.github.com/repos/doctrine/dbal/zipball/328357bd9eea9d671fe5fff0737f01953bfe66a0",
+            "reference": "328357bd9eea9d671fe5fff0737f01953bfe66a0",
             "shasum": ""
         },
         "require": {
@@ -527,7 +532,7 @@
         "suggest": {
             "symfony/console": "Allows use of the command line interface"
         },
-        "time": "2013-09-07 10:49:18",
+        "time": "2013-11-12 12:38:28",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -543,7 +548,8 @@
             {
                 "name": "Jonathan Wage",
                 "email": "jonwage@gmail.com",
-                "homepage": "http://www.jwage.com/"
+                "homepage": "http://www.jwage.com/",
+                "role": "Creator"
             },
             {
                 "name": "Guilherme Blanco",
@@ -622,7 +628,8 @@
             {
                 "name": "Jonathan Wage",
                 "email": "jonwage@gmail.com",
-                "homepage": "http://www.jwage.com/"
+                "homepage": "http://www.jwage.com/",
+                "role": "Creator"
             },
             {
                 "name": "Guilherme Blanco",

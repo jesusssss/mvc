@@ -1,6 +1,6 @@
 <?php
 namespace controller;
-class productController {
+class vareController {
 	private $request;
 	private $product;
     /** @var \Doctrine\ORM\EntityManager */
@@ -15,7 +15,7 @@ class productController {
 		if(!isset($this->request["productid"])) {
 			return;
 		}
-		$this->product = $this->em->find('productModel',$this->request["productid"]);
+		$this->product = $this->em->find('models\productModel',$this->request["productid"]);
 	}
 	
 	/* saves a new product */

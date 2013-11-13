@@ -59,15 +59,15 @@ class PhpExporter extends AbstractExporter
         }
 
         if ($metadata->table) {
-            $lines[] = '$metadata->setPrimaryTable(' . $this->_productxport($metadata->table) . ');';
+            $lines[] = '$metadata->setPrimaryTable(' . $this->_varExport($metadata->table) . ');';
         }
 
         if ($metadata->discriminatorColumn) {
-            $lines[] = '$metadata->setDiscriminatorColumn(' . $this->_productxport($metadata->discriminatorColumn) . ');';
+            $lines[] = '$metadata->setDiscriminatorColumn(' . $this->_varExport($metadata->discriminatorColumn) . ');';
         }
 
         if ($metadata->discriminatorMap) {
-            $lines[] = '$metadata->setDiscriminatorMap(' . $this->_productxport($metadata->discriminatorMap) . ');';
+            $lines[] = '$metadata->setDiscriminatorMap(' . $this->_varExport($metadata->discriminatorMap) . ');';
         }
 
         if ($metadata->changeTrackingPolicy) {
@@ -83,7 +83,7 @@ class PhpExporter extends AbstractExporter
         }
 
         foreach ($metadata->fieldMappings as $fieldMapping) {
-            $lines[] = '$metadata->mapField(' . $this->_productxport($fieldMapping) . ');';
+            $lines[] = '$metadata->mapField(' . $this->_varExport($fieldMapping) . ');';
         }
 
         if ( ! $metadata->isIdentifierComposite && $generatorType = $this->_getIdGeneratorTypeString($metadata->generatorType)) {
@@ -146,7 +146,7 @@ class PhpExporter extends AbstractExporter
                 $associationMappingArray = array_merge($associationMappingArray, $manyToManyMappingArray);
             }
 
-            $lines[] = '$metadata->' . $method . '(' . $this->_productxport($associationMappingArray) . ');';
+            $lines[] = '$metadata->' . $method . '(' . $this->_varExport($associationMappingArray) . ');';
         }
 
         return implode("\n", $lines);
@@ -157,7 +157,7 @@ class PhpExporter extends AbstractExporter
      *
      * @return string
      */
-    protected function _productxport($var)
+    protected function _varExport($var)
     {
         $export = var_export($var, true);
         $export = str_replace("\n", PHP_EOL . str_repeat(' ', 8), $export);

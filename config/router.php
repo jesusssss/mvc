@@ -12,10 +12,10 @@ class router {
 			$view = $request["view"];
 		}
 		
-		$controller = $request["controller"]."Controller";
+		$controller = "controller\\".$request["controller"]."Controller";
 		$controlObj = new $controller($request);
 		
-		$view = $request["controller"].$view."View";
+		$view = "views\\".$request["controller"].$view."View";
 		$viewObj = new $view();
 		
 		if(isset($request["event"])) {

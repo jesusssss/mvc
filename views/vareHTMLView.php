@@ -1,6 +1,6 @@
 <?php
 namespace views;
-class productHTMLView {
+class vareHTMLView {
 
 	public function render($controller) {
 		
