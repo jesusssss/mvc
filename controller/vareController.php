@@ -10,7 +10,7 @@ class vareController {
 		$this->request = $request;
         $this->em = $GLOBALS["em"];
 	}
-
+ 
 	public function default_event() {
 		if(!isset($this->request["productid"])) {
 			return;
@@ -37,7 +37,7 @@ class vareController {
 		$this->em->persist($product);
 		$this->em->flush();
 
-		Header('Location:index.php?controller=vare&view=HTML&productid='.$product->getId());
+		Header('Location:index.php?controller=vareListe');
         exit;
 	}
 	
