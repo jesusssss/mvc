@@ -21,7 +21,7 @@ class vareController {
 	/* saves a new product */
 	public function save_event(){
 		echo "saved";
-		$product = new productModel();
+		$product = new \models\productModel();
 		$product->setName($this->request["productname"]);
 		//$product->setPrice($this->request["productprice"]);
 		$this->em->persist($product);
