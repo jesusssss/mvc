@@ -5,7 +5,7 @@ class vareController {
 	private $product;
     /** @var \Doctrine\ORM\EntityManager */
     private $em;
-	
+
 	public function __construct($request) {
 		$this->request = $request;
         $this->em = $GLOBALS["em"];
